@@ -2,5 +2,4 @@ node_modules
 .vscode
 conteudo.json
 yarn.lock
-/api/*
-/download/*
+/download/*png

@@ -1,0 +1,8 @@
+{
+  "chave": "rxjUFAaEkg1U2v-fphUbemqi6e424P6oHLRYA6Nf4Mjl",
+  "iam_apikey_description": "Auto-generated for key b4be485c-1cac-42c3-8324-790d9eaf9257",
+  "iam_apikey_name": "Auto-generated service credentials",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/d8ccfd858ed74818b2af65e5bbf9f635::serviceid:ServiceId-e759a20b-7703-49b8-aa1a-dfae51a98148",
+  "url": "https://gateway.watsonplatform.net/natural-language-understanding/api"
+}
