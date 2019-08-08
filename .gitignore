@@ -3,3 +3,4 @@ node_modules
 conteudo.json
 yarn.lock
 /download/*png
+yarn-error.log

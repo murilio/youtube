@@ -6,11 +6,13 @@ const credenciasGoogle = require('../api/googlecloud.json')
 const estado = require('./estado')
 
 async function imagem() {
-    console.log('> [Robô de imagens] Iniciando...')
+    console.log('> [Robô de imagens] Iniciando...\n')
     const conteudo = estado.carregar()
 
     await pesquisarTodasImagens(conteudo)
+    console.log('\n')
     await baixarTodasImagens(conteudo)
+    console.log('\n')
 
     estado.salvar(conteudo)
 
@@ -33,7 +35,7 @@ async function imagem() {
 
     async function linkDasImagens(pergunta) {
         const response = await googlePesquisa.cse.list({
-            auth: credenciasGoogle.chave,
+            auth: credenciasGoogle.apikey,
             cx: credenciasGoogle.mecanisnodeBusca,
             q: pergunta,
             searchType: 'image',
@@ -64,7 +66,7 @@ async function imagem() {
 
                     await salvarImagems(urlImagens, `${sentencaIndex}-original.png`)
                     conteudo.baixarImagens.push(urlImagens)
-                    console.log(`> [Robô de imagens] Baixou a imagem com sucesso: ${urlImagens}`)
+                    console.log(`> [Robô de imagens] Baixou a imagem com sucesso: ${sentencaIndex}-original.png`)
                     break;
                 } catch (error) {
                     console.log(`> [Robô de imagens] Error ao baixar (${urlImagens})`)

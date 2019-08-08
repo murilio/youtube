@@ -1,9 +1,9 @@
 const algorithmia = require('algorithmia')
-const chaveAlgorithmia = require('../api/algorithmia.json').chave
+const chaveAlgorithmia = require('../api/algorithmia.json').apikey
 const detectarSentenca = require('sbd')
 
-const chaveWatson = require('../api/watson.nlu.json').chave
-const NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-language-understanding/v1')
+const chaveWatson = require('../api/watson.nlu.json').apikey
+const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1')
 
 const nlu = new NaturalLanguageUnderstandingV1({
     iam_apikey: chaveWatson,
@@ -36,7 +36,7 @@ async function texto() {
         })
         const conteudoWikipedia = respostaWikipedia.get()
         conteudo.conteudoOriginal = conteudoWikipedia.content
-        console.log('> [Robô de texto] Busca finalizada!')
+        console.log('> [Robô de texto] Busca finalizada!\n')
     }
 
     // limpa os caracteres especias da wikipedia
@@ -86,7 +86,7 @@ async function texto() {
     }
 
     async function separarPalavrasChave(conteudo) {
-        console.log('> [Robô de texto] Iniciando a seleção das palavras chaves usando Watson...')
+        console.log('> [Robô de texto] Iniciando a seleção das palavras chaves usando Watson...\n')
         for (const sentenca of conteudo.sentencas) {
             console.log(`> [Robô de texto] Sentença: "${sentenca.texto}"`)
             sentenca.palavrasChave = await palavrasChaveWatson(sentenca.texto)
