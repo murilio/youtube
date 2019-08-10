@@ -2,5 +2,7 @@ node_modules
 .vscode
 conteudo.json
 yarn.lock
-/download/*png
 yarn-error.log
+/download/*.png
+/download/*.js
+/download/*.jpg
