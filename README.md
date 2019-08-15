@@ -5,10 +5,7 @@
 >- Node JS
 >- Algorithmia
 >- IBM Cloud
->- Google Cloud Platform 
->- Pesquisa Personalizada do Google
->- OAuth2
->- Api do Youtube
+>- Google API`s
 >- Adobe Affect Effect
 
 ### Bibliotecas Especificas
@@ -18,6 +15,7 @@
 >- image-downloader ( Baixar imagens pela Url )
 >- gm ( Editar imagens por código )
 >- express ( Cria o servidor http )
+>- googleapis ( API do Google )
 
 ## Iniciando o Robo
 
