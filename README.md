@@ -1,5 +1,10 @@
 ## Robo Automático 
 
+### Tecnologias Necessárias
+
+>- Node JS >= 10.16.0 ( [Instalar o Node](https://nodejs.org/en/download/) )
+>- Git ( [Instalar o Git](https://git-scm.com/downloads) )
+
 ### Tecnologias Usadas
 
 >- Node JS
@@ -20,11 +25,6 @@
 ## Iniciando o Robo
 
 ### Passo a Passo
-
-- ### Tecnologias Necessárias
-
->- Node JS >= 10.16.0 ( [Instalar o Node](https://nodejs.org/en/download/) )
->- Git ( [Instalar o Git](https://git-scm.com/downloads) )
 
 - ### Baixando o projeto
 
