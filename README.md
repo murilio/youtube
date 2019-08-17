@@ -1,14 +1,16 @@
 ## Robo Automático 
 
+### Tecnologias Necessárias
+
+>- Node JS >= 10.16.0 ( [Instalar o Node](https://nodejs.org/en/download/) )
+>- Git ( [Instalar o Git](https://git-scm.com/downloads) )
+
 ### Tecnologias Usadas
 
 >- Node JS
 >- Algorithmia
 >- IBM Cloud
->- Google Cloud Platform 
->- Pesquisa Personalizada do Google
->- OAuth2
->- Api do Youtube
+>- Google API`s
 >- Adobe Affect Effect
 
 ### Bibliotecas Especificas
@@ -18,15 +20,11 @@
 >- image-downloader ( Baixar imagens pela Url )
 >- gm ( Editar imagens por código )
 >- express ( Cria o servidor http )
+>- googleapis ( API do Google )
 
 ## Iniciando o Robo
 
 ### Passo a Passo
-
-- ### Tecnologias Necessárias
-
->- Node JS >= 10.16.0 ( [Instalar o Node](https://nodejs.org/en/download/) )
->- Git ( [Instalar o Git](https://git-scm.com/downloads) )
 
 - ### Baixando o projeto
 
