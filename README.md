@@ -28,11 +28,11 @@
 
 - ### Baixando o projeto
 
-!['baixando o projeto'](/images/download.gif "baixando o projeto")
+<!-- !['baixando o projeto'](/images/download.gif "baixando o projeto") -->
 
 - ### Instalando as Dependências
 
-!['Instalando as Dependências'](/images/npm-install.gif "intalando as depedências")
+<!-- !['Instalando as Dependências'](/images/npm-install.gif "intalando as depedências") -->
 
 - ### Criando Suas API Key
 
