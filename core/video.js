@@ -143,7 +143,7 @@ async function video() {
 
     async function renderizarVideo() {
         return new Promise((resolve, reject) => {
-            const editordeVideo = 'C:\Program Files\Adobe\Adobe After Effects CC 2019'
+            const editordeVideo = 'C:/Program Files/Adobe/Adobe After Effects CC 2019'
             const template = `${rootPath}/template/1/template.aep`
             const arquivoFinal = `${rootPath}/download/video.mov`
 
