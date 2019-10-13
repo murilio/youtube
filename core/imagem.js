@@ -39,6 +39,8 @@ async function imagem() {
             cx: credenciasGoogle.mecanisnodeBusca,
             q: pergunta,
             searchType: 'image',
+            imgDominantColor: 'blue',
+            imgSize: 'xxlarge',
             num: 2
         })
 

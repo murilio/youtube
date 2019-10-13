@@ -7,20 +7,22 @@
 
 ### Tecnologias Usadas
 
->- Node JS
->- Algorithmia
->- IBM Cloud
->- Google API`s
+>- Node JS -
+>- Algorithmia -
+>- IBM Cloud -
+>- Google API`s -
+>- CSE - [ Pesquisa Personalizada ]
+>- OAuth 2.0
 >- Adobe Affect Effect
 
 ### Bibliotecas Especificas
 
->- readline-sync ( Pegar o Input do Usuário )
->- watson-developer-cloud ( Autenticar com o Watson )
->- image-downloader ( Baixar imagens pela Url )
->- gm ( Editar imagens por código )
+>- readline-sync ( Pegar o Input do Usuário ) -
+>- watson-developer-cloud ( Autenticar com o Watson ) -
+>- image-downloader ( Baixar imagens pela Url ) -
+>- gm ( Editar imagens por código ) -
 >- express ( Cria o servidor http )
->- googleapis ( API do Google )
+>- googleapis ( API do Google ) -
 
 ## Iniciando o Robo
 

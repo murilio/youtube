@@ -1,7 +1,4 @@
-const gm = require('gm').subClass({
-    imageMagick: true
-})
-
+const gm = require('gm').subClass({imageMagick: true})
 const estado = require('./estado')
 const spawn = require('child_process').spawn
 const path = require('path')
@@ -33,36 +30,21 @@ async function video() {
         return new Promise((resolve, reject) => {
             const arquivoEntrada = `./download/${sentencaIndex}-original.png[0]`
             const arquivoSaida = `./download/${sentencaIndex}-convertida.png`
-            const largura = 1920
-            const altura = 1080
+            var largura = 1920
+            var altura = 1080
 
-            gm()
-                .in(arquivoEntrada)
-                .out("(")
-                .out("-clone")
-                .out("0")
-                .out("-background", "white")
-                .out("-blur", "0x9")
-                .out("-resize", `${largura}x${altura}`)
-                .out(")")
-                .out("(")
-                .out("-clone")
-                .out("0")
-                .out("-background", "white")
-                .out("-resize", `${largura}x${altura}`)
-                .out(")")
-                .out("-delete", "0")
-                .out("-gravity", "center")
-                .out("-compose", "over")
-                .out("-composite")
-                .out("-extent", `${largura}x${altura}`)
-                .write(`./download/${sentencaIndex}-convertida.png`, (error) => {
-                    if (error) {
-                        return reject(error)
-                    }
-                    console.log(`> [Robô de vídeo] Imagem convertida: ${arquivoSaida}`)
-                    resolve()
-                })
+            gm(arquivoEntrada)
+            .resize(largura, altura, '!')
+            .autoOrient()
+            .write(`./download/${sentencaIndex}-convertida.png`, (err) => {
+                if(err){
+                    return reject(err)
+                }
+                console.log(`> [Robô de vídeo] Imagem convertida: ${arquivoSaida}`)
+                resolve()
+            })
+
+
         })
     }
 
@@ -125,7 +107,7 @@ async function video() {
         return new Promise((resolve, reject) => {
             gm()
                 .in('./download/0-convertida.png')
-                .write('./download/thumbnail.jpg', (error) => {
+                .write('./download/thumbnail.png', (error) => {
                     if (error) {
                         return reject(error)
                     }
@@ -143,7 +125,7 @@ async function video() {
 
     async function renderizarVideo() {
         return new Promise((resolve, reject) => {
-            const editordeVideo = 'C:/Program Files/Adobe/Adobe After Effects CC 2019'
+            const editordeVideo = 'C:/Program Files/Adobe/Adobe After Effects CC 2019/Support Files/aerender.exe'
             const template = `${rootPath}/template/1/template.aep`
             const arquivoFinal = `${rootPath}/download/video.mov`
 
