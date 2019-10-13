@@ -12,7 +12,7 @@ async function iniciar() {
     // await robos.texto()
     await robos.imagem()
     await robos.video()
-    // await robos.youtube()
+    await robos.youtube()
 
 }
 

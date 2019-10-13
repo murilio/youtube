@@ -6,4 +6,6 @@ yarn-error.log
 /download/*.png
 /download/*.js
 /download/*.jpg
+/download/*.mov
+/download/*.mp4
 /api/*

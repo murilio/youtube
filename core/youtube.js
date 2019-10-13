@@ -117,7 +117,7 @@ async function roboYoutube() {
     }
 
     async function uploadVideo(conteudo) {
-        const arquivoVideo = './download/output.mp4'
+        const arquivoVideo = './download/video.mp4'
         const tamanhoVideo = fs.statSync(arquivoVideo).size
         const tituloVideo = `${conteudo.pesquisa}`
         const tagsVideo = [conteudo.pesquisa, ...conteudo.sentencas[0].palavrasChave]

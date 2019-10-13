@@ -127,14 +127,14 @@ async function video() {
         return new Promise((resolve, reject) => {
             const editordeVideo = 'C:/Program Files/Adobe/Adobe After Effects CC 2019/Support Files/aerender.exe'
             const template = `${rootPath}/template/1/template.aep`
-            const arquivoFinal = `${rootPath}/download/video.mov`
+            const arquivoFinal = `${rootPath}/download/video.mp4`
 
             console.log('> [Robô de vídeo] Iniciando o editor de vídeo...')
 
             const editor = spawn(editordeVideo, [
                 '-comp', 'main',
                 '-project', template,
-                '-ouput', arquivoFinal
+                '-output', arquivoFinal
             ])
 
             editor.stdout.on('data', (data) => {
